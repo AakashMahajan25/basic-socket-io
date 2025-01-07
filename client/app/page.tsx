@@ -2,7 +2,7 @@
 import io from "socket.io-client";
 import React, { useEffect, useState } from 'react'
 
-const socket = io("https://basic-socket-io-seven.vercel.app");
+const socket = io("https://basic-socket-io-eipr.vercel.app");
 
 const Client = () => {
   const [message, setMessage] = useState("");
