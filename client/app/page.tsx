@@ -2,9 +2,9 @@
 import io from "socket.io-client";
 import React, { useEffect, useState } from 'react'
 
-const socket = io("http://localhost:8000");
+const socket = io("https://basic-socket-io-seven.vercel.app");
 
-const page = () => {
+const Client = () => {
   const [message, setMessage] = useState("");
   const [messages, setMessages] = useState<string[]>([]);
 
@@ -54,4 +54,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Client
